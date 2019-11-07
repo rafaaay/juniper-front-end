@@ -1,0 +1,178 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #363636;
+  background-color: #F8EFEF; }
+
+.heading-secondary {
+  font-family: 'Cardo', serif;
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #363636; }
+  .heading-secondary--main {
+    display: block; }
+  .heading-secondary--sub {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2.8rem;
+    font-weight: 300;
+    display: block; }
+
+.u-center-text {
+  text-align: center !important; }
+
+.u-right-text {
+  text-align: right !important; }
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem !important; }
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem !important; }
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem !important; }
+
+.u-margin-top-small {
+  margin-top: 1.5rem !important; }
+
+.u-margin-top-medium {
+  margin-top: 4rem !important; }
+
+.u-margin-top-big {
+  margin-top: 8rem !important; }
+
+.u-margin-top-huge {
+  margin-top: 10rem !important; }
+
+.u-padding-top-page {
+  padding-top: 10rem !important; }
+
+.u-display-none {
+  display: none !important; }
+
+.u-display-block {
+  display: block !important; }
+
+.card {
+  margin: 0 auto;
+  box-shadow: 0 0 1rem #CFCFCF;
+  overflow: hidden; }
+  .card--form {
+    max-width: 45rem; }
+  .card--congrats {
+    max-width: 50rem; }
+  .card__body {
+    padding: 5rem 4.5rem 0rem 4.5rem;
+    border-top: 0.4rem solid #3AABE8; }
+  .card__image img {
+    width: 100%; }
+  .card__footer {
+    background-color: #CFCFCF;
+    padding: 1.5rem 0; }
+    .card__footer a {
+      color: #3AABE8; }
+
+.form {
+  overflow: auto; }
+  .form__group::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .form__group:not(:last-child) {
+    margin-bottom: 2rem; }
+  .form__label {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    display: block; }
+  .form__input {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.8rem;
+    padding: 10px;
+    width: 100%;
+    border: 2px solid #CFCFCF;
+    display: block; }
+    .form__input::placeholder {
+      font-family: 'Josefin Sans', sans-serif;
+      font-size: 1.8rem; }
+    .form__input:focus {
+      outline: none;
+      border: 2px solid #3AABE8; }
+    .form__input:focus:invalid {
+      outline: none;
+      border: 2px solid #E84646; }
+  .form__radio-group {
+    width: 50%;
+    float: left; }
+  .form__link {
+    width: 50%;
+    float: right; }
+    .form__link a {
+      color: #3AABE8; }
+
+.btn, .btn:link, .btn:visited {
+  font-size: 1.8rem;
+  color: #F8EFEF;
+  text-decoration: none;
+  padding: 1rem 6rem;
+  display: inline-block;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer; }
+
+.btn--blue {
+  background-color: #3AABE8; }
+
+.container {
+  max-width: 114rem;
+  margin: 0 auto; }
+  .container:not(:last-child) {
+    margin-bottom: 8rem; }
+  .container::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .container [class^="col-"] {
+    float: left; }
+    .container [class^="col-"]:not(:last-child) {
+      margin-right: 6rem; }
+  .container .col-1-of-2 {
+    width: calc((100% - 6rem) / 2); }
+  .container .col-1-of-3 {
+    width: calc((100% - 6rem * 2) / 3); }
+  .container .col-1-of-4 {
+    width: calc((100% - 6rem * 3) / 4); }
+  .container .col-3-of-4 {
+    width: calc( 3 * ((100% - 6rem * 3) / 4) + 6rem); }
+
+.page-register .progress-bar {
+  margin-bottom: 7rem; }
+  .page-register .progress-bar .node {
+    width: 4rem;
+    height: 4rem;
+    line-height: 4rem;
+    color: #F8EFEF;
+    border-radius: 50%;
+    display: inline-block; }
+    .page-register .progress-bar .node--active {
+      background-color: #3AABE8;
+      transform: scale(1.2); }
+    .page-register .progress-bar .node--inactive {
+      background-color: #BCC2D6; }
+  .page-register .progress-bar .path {
+    display: inline-block;
+    width: 15.5rem;
+    border-top: 1px solid #BCC2D6; }

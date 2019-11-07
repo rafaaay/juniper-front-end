@@ -1,0 +1,59 @@
+.form {
+    overflow: auto;
+
+    &__group {
+
+        @include clearfix;
+
+        &:not(:last-child) {
+            margin-bottom: 2rem;
+        }
+        
+    }
+
+    &__label {
+        font-size: $font-size-default;
+        margin-bottom: 1rem;
+        display: block;
+    }
+
+    &__input {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: $font-size-default;
+        padding: 10px;
+        width: 100%;
+        border: 2px solid $color-border;
+        display: block;
+
+        &::placeholder {
+            font-family: 'Josefin Sans', sans-serif;
+            font-size: $font-size-default;
+        }
+
+        &:focus {
+            outline: none;
+            border: 2px solid $color-primary;
+        }
+
+        &:focus:invalid {
+            outline: none;
+            border: 2px solid $color-danger;
+        }
+
+    }
+
+    &__radio-group {
+        width: 50%;
+        float: left;
+    }
+
+    &__link {
+        width: 50%;
+        float: right;
+
+        a {
+            color: $color-primary;
+        }
+    }
+
+}

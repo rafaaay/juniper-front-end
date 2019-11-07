@@ -1,0 +1,26 @@
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: $color-text;
+    background-color: $color-body;
+}
+
+.heading-secondary {
+    font-family: 'Cardo', serif;
+    font-size: $font-size-h2;
+    font-weight: 700;
+    color: $color-text;
+
+    &--main {
+        display: block;
+    }
+    
+    &--sub {
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: $font-size-h4;
+        font-weight: 300;
+        display: block;
+    }
+
+}

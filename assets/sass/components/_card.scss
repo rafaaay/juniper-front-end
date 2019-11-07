@@ -1,0 +1,32 @@
+.card {
+    margin: 0 auto;
+    box-shadow:  0 0 1rem $color-border;
+    overflow: hidden;
+
+    &--form {
+        max-width: 45rem;
+    }
+    &--congrats {
+        max-width: 50rem;
+    }
+
+    &__body {
+        padding: 5rem 4.5rem 0rem 4.5rem;
+        border-top: 0.4rem solid $color-primary;
+    }
+
+    &__image {
+        img {
+            width: 100%;
+        }
+    }
+
+    &__footer {
+        background-color: $color-border;
+        padding: 1.5rem 0;
+
+        a {
+            color: $color-primary;
+        }
+    }
+}
